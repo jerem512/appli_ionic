@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>CD</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-list>
+    <button ion-item *ngFor="let cd of cdsList" (click)="onLoadCd(cd.name)">{{cd.name}}</button>
+  </ion-list>
+</ion-content>
+<ion-footer padding>
+  <p>Bas de page</p>
+</ion-footer>

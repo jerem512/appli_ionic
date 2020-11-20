@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{book.name}}</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>{{book.name}}</ion-card-header>
+    <ion-card-content>
+     <p *ngFor="let line of book.description">{{line}}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
